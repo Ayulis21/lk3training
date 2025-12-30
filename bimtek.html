@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIMTEK & Workshop - Indotama Jasa Sertifikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap");
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .gradient-navy {
+        background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .card-shadow:hover {
+        box-shadow: 0 20px 25px -5px rgba(30, 64, 175, 0.1),
+          0 10px 10px -5px rgba(30, 64, 175, 0.04);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <div class="bg-blue-900 text-white text-xs py-2 hidden md:block">
+      <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div class="flex gap-4">
+          <span
+            ><i class="fas fa-envelope mr-1 text-blue-300"></i>
+            info@eleskaglobalcentratama.com</span
+          >
+          <span
+            ><i class="fas fa-phone mr-1 text-blue-300"></i>0321 2905656</span
+          >
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-blue-300"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" class="hover:text-blue-300"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-blue-300"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between h-20 items-center">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <div
+              class="bg-blue-800 text-white p-2 rounded-lg font-bold text-xl mr-2 italic"
+            >
+              Logo
+            </div>
+            <span
+              class="font-extrabold text-blue-900 text-lg hidden lg:block uppercase tracking-tighter"
+              >LK3 Training Center<br /><span class="text-blue-600 text-xs"
+                >Sertifikasi</span
+              ></span
+            >
+          </div>
+
+          <!-- Main Menu -->
+          <div
+            class="hidden lg:flex space-x-1 font-semibold text-gray-700 text-sm"
+          >
+            <a
+              href="beranda.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition"
+              >Beranda</a
+            >
+            <a
+              href="bimtek.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition uppercase"
+              >BIMTEK / WORKSHOP</a
+            >
+
+            <!-- Dropdown Lisensi -->
+            <div class="relative group">
+              <button
+                class="px-4 py-2 rounded-lg group-hover:bg-blue-50 group-hover:text-blue-700 flex items-center transition uppercase"
+              >
+                Lisensi <i class="fas fa-chevron-down ml-1 text-[10px]"></i>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+              >
+                <a
+                  href="lisensiEsdm.html"
+                  class="block px-4 py-3 hover:bg-blue-50 text-gray-700"
+                  >Lisensi ESDM</a
+                >
+                <a
+                  href="lisensiKemnaker.html"
+                  class="block px-4 py-3 hover:bg-blue-50 text-gray-700 border-t"
+                  >Lisensi Kemenaker</a
+                >
+                <a
+                  href="lisensiBnsp.html"
+                  class="block px-4 py-3 hover:bg-blue-50 text-gray-700 border-t"
+                  >Lisensi BNSP</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="galeri.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition uppercase"
+              >Galeri Video</a
+            >
+            <a
+              href="kontak.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition uppercase"
+              >Kontak</a
+            >
+          </div>
+
+          <!-- CTA -->
+          <div>
+            <a
+              href="https://wa.me/6281248829810"
+              class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200 text-sm"
+            >
+              Konsultasi
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO BIMTEK -->
+    <header
+      class="gradient-navy py-24 px-4 flex items-center text-white overflow-hidden relative"
+    >
+      <div class="max-w-7xl mx-auto text-center relative z-10 reveal">
+        <h1
+          class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 uppercase"
+        >
+          Program Bimbingan Teknis <br />&
+          <span class="text-blue-400">Workshop Profesional</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-blue-100 text-lg font-light mb-10">
+          Tingkatkan kompetensi teknis SDM Anda melalui pelatihan praktis yang
+          disusun sesuai kebutuhan industri terkini.
+        </p>
+        <!-- <div class="flex justify-center gap-4">
+          <a
+            href="#jadwal"
+            class="bg-white text-blue-900 px-8 py-4 rounded-2xl font-bold shadow-xl hover:bg-blue-50 transition"
+            >Lihat Jadwal 2026</a
+          >
+          <!-- <a
+            href="#in-house"
+            class="border border-white/30 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition"
+            >In-House Training</a
+          > -->
+        </div>
+      </div>
+      <!-- Decorative Circle -->
+      <div
+        class="absolute top-0 right-0 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl -mr-40 -mt-40"
+      ></div>
+    </header>
+
+    <!-- FILTER & CATEGORY -->
+    <section
+      class="py-12 bg-white border-b border-slate-100 sticky top-20 z-40"
+    >
+      <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-3">
+        <button
+          class="px-6 py-2.5 bg-blue-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest shadow-lg shadow-blue-200"
+        >
+          Semua
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          HSE / K3
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Teknik Listrik
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Manajemen
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Konstruksi
+        </button>
+      </div>
+    </section>
+
+    <!-- JADWAL BIMTEK (CARDS) -->
+    <section id="jadwal" class="py-24 px-4 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
+        >
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
+            >
+              Open Registration
+            </div>
+          </div>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 15 - 17
+                Jan 2026</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt text-red-500 mr-1"></i>
+                Makassar</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Bimtek Implementasi SMK3 PP No. 50 Tahun 2012
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Pelatihan teknis penyusunan dokumen dan audit internal SMK3 untuk
+              perusahaan.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 3.500.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
+              </div>
+              <a
+                href="detailbimtek.html"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
+        >
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-amber-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
+            >
+              Limited Seats
+            </div>
+          </div>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 22 - 24
+                Jan 2026</span
+              >
+              <span
+                ><i class="fas fa-video text-blue-500 mr-1"></i> Online
+                Zoom</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Workshop Penyusunan HIRADC & JSA Profesional
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Teknik identifikasi bahaya dan penilaian risiko kerja secara
+              komprehensif.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 1.500.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
+              </div>
+              <a
+                href="#"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
+        >
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
+            >
+              Open Registration
+            </div>
+          </div>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 05 - 07
+                Feb 2026</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt text-red-500 mr-1"></i>
+                Jakarta</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Bimtek K3 Listrik & Sertifikasi SKTTK ESDM
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Pelatihan khusus teknik ketenagalistrikan sesuai standar DJK ESDM.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 4.250.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
+              </div>
+              <a
+                href="#"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IN-HOUSE TRAINING SECTION -->
+    <!-- <section
+      id="in-house"
+      class="py-24 bg-slate-900 text-white overflow-hidden px-4"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16"
+      >
+        <div class="lg:w-1/2 reveal">
+          <h2
+            class="text-4xl font-extrabold mb-6 leading-tight uppercase italic"
+          >
+            Layanan <span class="text-blue-400">In-House Training</span>
+          </h2>
+          <p class="text-slate-400 mb-8 text-lg font-light">
+            Butuh pelatihan khusus untuk internal tim di lokasi perusahaan Anda?
+            Kami melayani kurikulum yang dipersonalisasi sesuai kebutuhan
+            industri Anda.
+          </p>
+          <ul class="space-y-4 mb-10 text-sm">
+            <li class="flex items-center gap-3">
+              <i class="fas fa-check-circle text-blue-500"></i> Waktu dan Lokasi
+              Fleksibel
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-check-circle text-blue-500"></i> Kurikulum Bisa
+              Custom (Disesuaikan Case Perusahaan)
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-check-circle text-blue-500"></i> Biaya Lebih
+              Hemat untuk Grup Besar
+            </li>
+          </ul>
+          <a
+            href="https://wa.me/6281248829810"
+            class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-blue-700 transition inline-flex items-center gap-2 shadow-xl shadow-blue-900/40"
+          >
+            <i class="fab fa-whatsapp"></i> Ajukan Penawaran
+          </a>
+        </div>
+        <div class="lg:w-1/2 reveal">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+            class="rounded-[3rem] shadow-2xl border-4 border-white/5 grayscale hover:grayscale-0 transition duration-700"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- METODE PELATIHAN -->
+    <section class="py-24 bg-white px-4">
+      <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+        <h2 class="text-3xl font-extrabold text-slate-900 uppercase">
+          Metode Pembelajaran
+        </h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+      </div>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="text-center reveal">
+          <div
+            class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 text-3xl shadow-inner"
+          >
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2 uppercase">Offline / Tatap Muka</h4>
+          <p class="text-xs text-slate-500">
+            Pelatihan langsung di hotel atau pusat pelatihan IJS dengan praktik
+            lapangan intensif.
+          </p>
+        </div>
+        <div class="text-center reveal">
+          <div
+            class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 text-3xl shadow-inner"
+          >
+            <i class="fas fa-laptop-house"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2 uppercase">Online / Webinar</h4>
+          <p class="text-xs text-slate-500">
+            Fleksibilitas belajar dari mana saja menggunakan platform interaktif
+            dan modul digital.
+          </p>
+        </div>
+        <!-- <div class="text-center reveal">
+          <div
+            class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 text-3xl shadow-inner"
+          >
+            <i class="fas fa-users"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2 uppercase">In-House</h4>
+          <p class="text-xs text-slate-500">
+            Instruktur kami datang ke lokasi Anda untuk memberikan pelatihan
+            khusus karyawan perusahaan.
+          </p>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- CTA FOOTER -->
+    <section class="py-20 bg-slate-50 border-t border-slate-100">
+      <div class="max-w-4xl mx-auto text-center px-4 reveal">
+        <h2 class="text-2xl font-extrabold text-blue-900 mb-6 uppercase italic">
+          Butuh Jadwal Bimtek Lainnya?
+        </h2>
+        <p class="text-slate-600 mb-10">
+          Unduh katalog lengkap jadwal bimbingan teknis dan workshop IJS
+          Indonesia tahun 2026 sekarang juga.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="#"
+            class="bg-slate-900 text-white px-8 py-3.5 rounded-xl font-bold flex items-center gap-2"
+            ><i class="fas fa-download"></i> Download Katalog PDF</a
+          >
+          <!-- <a
+            href="https://wa.me/6281248829810"
+            class="bg-green-600 text-white px-8 py-3.5 rounded-xl font-bold flex items-center gap-2"
+            ><i class="fab fa-whatsapp"></i> Chat Admin</a
+          > -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FOOTER & COPYRIGHT -->
+     <footer id="kontak" class="bg-slate-900 text-white pt-24 pb-12 px-4">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20"
+      >
+        <div>
+          <div class="flex items-center mb-6">
+            <div
+              class="bg-blue-600 text-white p-2 rounded-lg font-bold text-xl mr-2 italic"
+            >
+              LOGO
+            </div>
+            <span class="font-bold">LK3 Training Center</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            PT. Eleska Global Centratama Indonesia. Mitra Strategis Sertifikasi
+            SDM Industri Indonesia.
+          </p>
+        </div>
+        <div>
+          <h5
+            class="text-xs font-black uppercase text-blue-400 mb-6 tracking-widest"
+          >
+            Akses Cepat
+          </h5>
+          <ul class="text-slate-400 text-xs space-y-4">
+            <li><a href="#" class="hover:text-white">Beranda</a></li>
+            <li><a href="#" class="hover:text-white">Lisensi ESDM</a></li>
+            <li><a href="#" class="hover:text-white">Lisensi Kemnaker</a></li>
+            <li><a href="#" class="hover:text-white">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="text-xs font-black uppercase text-blue-400 mb-6 tracking-widest"
+          >
+            Kantor Pusat
+          </h5>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Royal Sentraland BTP, Ruko Piccadilly Blok RD 007, Makassar,
+            Sulawesi Selatan.
+          </p>
+          <div class="mt-4 text-xs font-bold text-white">(0411) 8958 855</div>
+        </div>
+        <div>
+          <h5
+            class="text-xs font-black uppercase text-blue-400 mb-6 tracking-widest"
+          >
+            Sosial Media
+          </h5>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="text-2xl text-slate-500 hover:text-white transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-2xl text-slate-500 hover:text-white transition"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="#"
+              class="text-2xl text-slate-500 hover:text-white transition"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center border-t border-slate-800 pt-8 text-[10px] text-slate-600 font-bold uppercase tracking-widest"
+      >
+        &copy; 2025 PT. Indotama Jasa Sertifikasi. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING -->
+    <div class="fixed bottom-8 right-8 z-50">
+      <!-- OPTION BOX -->
+      <div
+        id="waOptions"
+        class="hidden mb-3 bg-white rounded-xl shadow-xl overflow-hidden"
+      >
+        <a
+          href="https://wa.me/6282143130060"
+          target="_blank"
+          class="block px-4 py-3 hover:bg-gray-100 text-sm"
+        >
+          💬 CS 1
+        </a>
+        <a
+          href="https://wa.me/6282143130060"
+          target="_blank"
+          class="block px-4 py-3 hover:bg-gray-100 text-sm"
+        >
+          💬 CS 2
+        </a>
+      </div>
+
+      <!-- MAIN BUTTON -->
+      <button
+        onclick="toggleWA()"
+        class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition animate-bounce"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </div>
+
+    <!-- SCRIPT REVEAL -->
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+      function toggleWA() {
+        const box = document.getElementById("waOptions");
+        box.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

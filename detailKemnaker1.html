@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurikulum Materi Pelatihan - IJS Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap");
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .gradient-navy {
+        background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+      }
+
+      /* Accordion Toggle Effect */
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      .accordion-item.active .accordion-content {
+        max-height: 500px;
+      }
+      .accordion-item.active .chevron-icon {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <!-- HEADER MATERIAL -->
+    <header class="gradient-navy py-16 px-4 text-center text-white">
+      <div class="max-w-4xl mx-auto">
+        <span
+          class="text-blue-300 text-[10px] font-black uppercase tracking-[0.4em] mb-4 block"
+          >Syllabus & Curriculum</span
+        >
+        <h1
+          class="text-3xl md:text-5xl font-extrabold uppercase italic leading-tight"
+        >
+          Materi Pembelajaran
+        </h1>
+        <p class="text-blue-100/70 text-sm mt-4 font-light">
+          Kurikulum yang disusun berdasarkan Standar Kompetensi Kerja Nasional
+          Indonesia (SKKNI) dan regulasi terbaru.
+        </p>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-16">
+      <!-- MATERI LIST (ACCORDION SYSTEM) -->
+      <div class="space-y-4">
+        <!-- MODUL 1 -->
+        <div
+          class="accordion-item bg-white border border-slate-200 rounded-[2rem] overflow-hidden shadow-sm transition-all duration-300 active"
+        >
+          <button
+            onclick="toggleAccordion(this)"
+            class="w-full flex items-center justify-between p-8 text-left outline-none"
+          >
+            <div class="flex items-center gap-6">
+              <div
+                class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center font-black text-lg"
+              >
+                01
+              </div>
+              <div>
+                <h3 class="text-lg font-extrabold text-blue-900 uppercase">
+                  Kelompok Dasar & Kebijakan
+                </h3>
+                <p
+                  class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1"
+                >
+                  Sesi Teori - Hari Ke-1
+                </p>
+              </div>
+            </div>
+            <i
+              class="fas fa-chevron-down text-slate-300 transition-transform duration-300 chevron-icon"
+            ></i>
+          </button>
+          <div class="accordion-content bg-slate-50/50">
+            <div class="p-8 pt-0 border-t border-slate-100">
+              <ul class="space-y-4 mt-6">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      Kebijakan K3 Nasional
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Penjelasan mengenai arah kebijakan pemerintah Indonesia
+                      dalam perlindungan tenaga kerja.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      Undang-Undang No. 1 Tahun 1970
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Bedah pasal demi pasal mengenai landasan utama keselamatan
+                      kerja.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      Dasar-Dasar K3
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Pengenalan filosofi dan prinsip pencegahan kecelakaan
+                      kerja.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODUL 2 -->
+        <div
+          class="accordion-item bg-white border border-slate-200 rounded-[2rem] overflow-hidden shadow-sm transition-all duration-300"
+        >
+          <button
+            onclick="toggleAccordion(this)"
+            class="w-full flex items-center justify-between p-8 text-left outline-none"
+          >
+            <div class="flex items-center gap-6">
+              <div
+                class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center font-black text-lg"
+              >
+                02
+              </div>
+              <div>
+                <h3 class="text-lg font-extrabold text-blue-900 uppercase">
+                  Kelompok Keahlian Teknis
+                </h3>
+                <p
+                  class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1"
+                >
+                  Sesi Teknis - Hari Ke-2 & 3
+                </p>
+              </div>
+            </div>
+            <i
+              class="fas fa-chevron-down text-slate-300 transition-transform duration-300 chevron-icon"
+            ></i>
+          </button>
+          <div class="accordion-content bg-slate-50/50">
+            <div class="p-8 pt-0 border-t border-slate-100">
+              <ul class="space-y-4 mt-6">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      Manajemen Risiko (HIRADC)
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Teknik identifikasi bahaya, penilaian, serta pengendalian
+                      risiko di tempat kerja.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      K3 Penanggulangan Kebakaran
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Sistem proteksi aktif dan pasif dalam memadamkan api.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      K3 Listrik & Konstruksi
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Pengawasan teknis instalasi listrik dan standar keamanan
+                      proyek bangunan.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODUL 3 -->
+        <div
+          class="accordion-item bg-white border border-slate-200 rounded-[2rem] overflow-hidden shadow-sm transition-all duration-300"
+        >
+          <button
+            onclick="toggleAccordion(this)"
+            class="w-full flex items-center justify-between p-8 text-left outline-none"
+          >
+            <div class="flex items-center gap-6">
+              <div
+                class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center font-black text-lg"
+              >
+                03
+              </div>
+              <div>
+                <h3 class="text-lg font-extrabold text-blue-900 uppercase">
+                  Evaluasi & Observasi Lapangan
+                </h3>
+                <p
+                  class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1"
+                >
+                  Praktik - Hari Terakhir
+                </p>
+              </div>
+            </div>
+            <i
+              class="fas fa-chevron-down text-slate-300 transition-transform duration-300 chevron-icon"
+            ></i>
+          </button>
+          <div class="accordion-content bg-slate-50/50">
+            <div class="p-8 pt-0 border-t border-slate-100">
+              <ul class="space-y-4 mt-6">
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      Kunjungan Industri (PKL)
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Observasi langsung ke perusahaan untuk mempraktikkan ilmu
+                      pengawasan K3.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      Pembuatan Laporan PKL
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Penyusunan laporan hasil temuan di lapangan sesuai format
+                      Kemnaker.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-800">
+                      Seminar & Ujian Akhir
+                    </h4>
+                    <p class="text-xs text-slate-500">
+                      Presentasi kelompok dan ujian tulis/online sebagai syarat
+                      kelulusan.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOWNLOAD BOX -->
+      <div
+        class="mt-16 bg-slate-900 rounded-[3rem] p-10 text-white flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 shadow-2xl"
+      >
+        <div class="flex items-center gap-6">
+          <div
+            class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl text-blue-400"
+          >
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold uppercase italic">Silabus Lengkap</h4>
+            <p class="text-xs text-slate-400 font-medium">
+              Unduh dokumen materi detail untuk pengajuan ke HRD.
+            </p>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition shadow-lg"
+          >Download PDF</a
+        >
+      </div>
+    </main>
+
+    <!-- FOOTER SIMPLE -->
+    <footer
+      class="py-12 border-t border-slate-100 text-center text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em]"
+    >
+      &copy; 2025 PT. Indotama Jasa Sertifikasi
+    </footer>
+
+    <!-- SCRIPT FOR ACCORDION -->
+    <script>
+      function toggleAccordion(button) {
+        const item = button.parentElement;
+
+        // Close other items (optional)
+        // document.querySelectorAll('.accordion-item').forEach(otherItem => {
+        //     if (otherItem !== item) otherItem.classList.remove('active');
+        // });
+
+        item.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

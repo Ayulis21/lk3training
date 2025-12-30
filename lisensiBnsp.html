@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sertifikasi BNSP - Indotama Jasa Sertifikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap");
+
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+
+      .gradient-navy {
+        background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+      }
+      .indigo-glow {
+        box-shadow: 0 0 20px rgba(79, 70, 229, 0.2);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .card-bnsp:hover {
+        transform: translateY(-10px);
+        border-color: #6366f1;
+        box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <div class="bg-blue-900 text-white text-xs py-2 hidden md:block">
+      <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div class="flex gap-4">
+          <span
+            ><i class="fas fa-envelope mr-1 text-blue-300"></i>
+            info@indotamajasasertifikasi.com</span
+          >
+          <span
+            ><i class="fas fa-phone mr-1 text-blue-300"></i> +62
+            812-4882-9810</span
+          >
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-blue-300"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" class="hover:text-blue-300"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-blue-300"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between h-20 items-center">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <div
+              class="bg-blue-800 text-white p-2 rounded-lg font-bold text-xl mr-2 italic"
+            >
+              IJS
+            </div>
+            <span
+              class="font-extrabold text-blue-900 text-lg hidden lg:block uppercase tracking-tighter"
+              >Indotama Jasa<br /><span class="text-blue-600 text-xs"
+                >Sertifikasi</span
+              ></span
+            >
+          </div>
+
+          <!-- Main Menu -->
+          <div
+            class="hidden lg:flex space-x-1 font-semibold text-gray-700 text-sm"
+          >
+            <a
+              href="beranda.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition"
+              >Beranda</a
+            >
+            <a
+              href="bimtek.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition uppercase"
+              >BIMTEK / WORKSHOP</a
+            >
+
+            <!-- Dropdown Lisensi -->
+            <div class="relative group">
+              <button
+                class="px-4 py-2 rounded-lg group-hover:bg-blue-50 group-hover:text-blue-700 flex items-center transition uppercase"
+              >
+                Lisensi <i class="fas fa-chevron-down ml-1 text-[10px]"></i>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+              >
+                <a
+                  href="lisensiEsdm.html"
+                  class="block px-4 py-3 hover:bg-blue-50 text-gray-700"
+                  >Lisensi ESDM</a
+                >
+                <a
+                  href="lisensiKemnaker.html"
+                  class="block px-4 py-3 hover:bg-blue-50 text-gray-700 border-t"
+                  >Lisensi Kemenaker</a
+                >
+                <a
+                  href="lisensiBnsp.html"
+                  class="block px-4 py-3 hover:bg-blue-50 text-gray-700 border-t"
+                  >Lisensi BNSP</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="galeri.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition uppercase"
+              >Galeri Video</a
+            >
+            <a
+              href="kontak.html"
+              class="px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition uppercase"
+              >Kontak</a
+            >
+          </div>
+
+          <!-- CTA -->
+          <div>
+            <a
+              href="https://wa.me/6281248829810"
+              class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200 text-sm"
+            >
+              Konsultasi
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION BNSP -->
+    <header
+      class="gradient-navy py-24 px-4 text-white overflow-hidden relative"
+    >
+      <div
+        class="max-w-4xl mx-auto flex flex-col items-center text-center relative z-10"
+      >
+        <h1
+          class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 uppercase"
+        >
+          Sertifikasi
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-300"
+          >
+            Kompetensi BNSP
+          </span>
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-blue-100 text-lg font-light mb-10">
+          Ukur kompetensi Anda dengan standar nasional <strong>SKKNI</strong>.
+          Sertifikat resmi yang diakui secara nasional dan internasional untuk
+          mendukung pengembangan karier profesional.
+        </p>
+
+        <div class="flex justify-center gap-4">
+          <a
+            href="#skema"
+            class="bg-indigo-500 text-white px-10 py-4 rounded-2xl font-bold shadow-xl hover:bg-indigo-600 transition transform hover:-translate-y-1"
+          >
+            Cari Skema
+          </a>
+
+          <a
+            href="#"
+            class="border border-white/30 px-10 py-4 rounded-2xl font-bold hover:bg-white/10 transition"
+          >
+            Alur Asesmen
+          </a>
+        </div>
+      </div>
+
+      <!-- Decorative Glow -->
+      <div
+        class="absolute top-0 right-0 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl -mr-40 -mt-40"
+      ></div>
+    </header>
+
+    <!-- SKEMA SERTIFIKASI BNSP -->
+    <section id="skema" class="py-24 px-4 max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl font-extrabold text-slate-900 uppercase italic">
+          Skema Sertifikasi Unggulan
+        </h2>
+        <div class="w-16 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- HSE Officer -->
+        <div
+          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-bnsp transition-all duration-500 group"
+        >
+          <div
+            class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-all"
+          >
+            <i class="fas fa-user-check"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">
+            HSE Officer BNSP
+          </h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-8">
+            Sertifikasi untuk personil K3 (Health, Safety, Environment) tingkat
+            dasar hingga menengah di industri.
+          </p>
+          <ul
+            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
+          >
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-indigo-500"></i> Standar SKKNI
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-indigo-500"></i> Pengawas K3 Industri
+            </li>
+          </ul>
+          <button
+            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-indigo-600 transition shadow-lg"
+          >
+            Detail Skema
+          </button>
+        </div>
+
+        <!-- Auditor SMK3 -->
+        <div
+          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-bnsp transition-all duration-500 group"
+        >
+          <div
+            class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all"
+          >
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">
+            Auditor SMK3
+          </h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-8">
+            Sertifikasi bagi profesional yang bertugas melakukan audit internal
+            maupun eksternal Sistem Manajemen K3.
+          </p>
+          <ul
+            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
+          >
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-indigo-500"></i> Audit Kepatuhan PP 50
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-indigo-500"></i> Kualifikasi Auditor
+            </li>
+          </ul>
+          <button
+            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-600 transition shadow-lg"
+          >
+            Detail Skema
+          </button>
+        </div>
+
+        <!-- TOT BNSP -->
+        <div
+          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-bnsp transition-all duration-500 group"
+        >
+          <div
+            class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-purple-600 group-hover:text-white transition-all"
+          >
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3
+            class="text-xl font-bold text-slate-900 mb-4 uppercase leading-tight"
+          >
+            Trainer / TOT <br />BNSP
+          </h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-8">
+            Training of Trainer (TOT) bagi instruktur profesional untuk
+            mendapatkan lisensi mengajar bersertifikat negara.
+          </p>
+          <ul
+            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
+          >
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-indigo-500"></i> Metodologi Pelatihan
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-indigo-500"></i> Sertifikat Kompetensi
+            </li>
+          </ul>
+          <button
+            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-purple-600 transition shadow-lg"
+          >
+            Detail Skema
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERI & PERSYARATAN BNSP -->
+    <section class="py-24 bg-slate-100 px-4">
+      <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start"
+      >
+        <!-- Requirements -->
+        <div class="lg:w-1/2 reveal">
+          <h3
+            class="text-2xl font-extrabold mb-8 italic uppercase border-l-4 border-indigo-600 pl-4"
+          >
+            Persyaratan Peserta
+          </h3>
+          <div class="bg-white p-8 rounded-[3rem] shadow-sm">
+            <p
+              class="text-xs text-slate-500 mb-6 font-bold uppercase tracking-widest"
+            >
+              Syarat Dasar Pengajuan Asesmen:
+            </p>
+            <ul class="space-y-6">
+              <li class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
+                >
+                  <i class="fas fa-file-pdf text-sm"></i>
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold">
+                    Kurikulum Vitae (CV) & Jobdesk
+                  </h5>
+                  <p class="text-[10px] text-slate-400 uppercase font-bold">
+                    Bukti Pengalaman Kerja Relevan
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
+                >
+                  <i class="fas fa-graduation-cap text-sm"></i>
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold">Ijazah & Transkrip Nilai</h5>
+                  <p class="text-[10px] text-slate-400 uppercase font-bold">
+                    Pendidikan Terakhir Sesuai Skema
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
+                >
+                  <i class="fas fa-briefcase text-sm"></i>
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold">
+                    Surat Keterangan Pengalaman Kerja
+                  </h5>
+                  <p class="text-[10px] text-slate-400 uppercase font-bold">
+                    Diterbitkan Oleh Perusahaan (Min. 1-2 Tahun)
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
+                >
+                  <i class="fas fa-images text-sm"></i>
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold">Portofolio Hasil Kerja</h5>
+                  <p class="text-[10px] text-slate-400 uppercase font-bold">
+                    Laporan, Dokumen JSA, HIRADC, atau Sertifikat Lama
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Assessment Process -->
+        <div class="lg:w-1/2 reveal">
+          <h3
+            class="text-2xl font-extrabold mb-8 italic uppercase border-l-4 border-indigo-600 pl-4"
+          >
+            Alur Asesmen BNSP
+          </h3>
+          <div class="space-y-6">
+            <div
+              class="flex gap-6 items-center p-6 bg-white rounded-3xl border border-slate-100"
+            >
+              <div class="text-2xl font-black text-slate-200 uppercase">01</div>
+              <div>
+                <h5 class="font-bold text-indigo-900">Pra-Asesmen</h5>
+                <p class="text-xs text-slate-500">
+                  Verifikasi kelengkapan dokumen portofolio oleh Asesor.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-6 items-center p-6 bg-white rounded-3xl border border-slate-100"
+            >
+              <div class="text-2xl font-black text-slate-200 uppercase">02</div>
+              <div>
+                <h5 class="font-bold text-indigo-900">Uji Kompetensi</h5>
+                <p class="text-xs text-slate-500">
+                  Metode Wawancara, Ujian Tulis, dan Observasi Praktik.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-6 items-center p-6 bg-white rounded-3xl border border-slate-100"
+            >
+              <div class="text-2xl font-black text-slate-200 uppercase">03</div>
+              <div>
+                <h5 class="font-bold text-indigo-900">Rekomendasi</h5>
+                <p class="text-xs text-slate-500">
+                  Keputusan Komite Teknis LSP (Kompeten / Belum Kompeten).
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-6 items-center p-6 bg-indigo-600 text-white rounded-3xl shadow-lg shadow-indigo-200"
+            >
+              <div class="text-2xl font-black text-indigo-300 uppercase">
+                04
+              </div>
+              <div>
+                <h5 class="font-bold">Penerbitan Sertifikat</h5>
+                <p class="text-xs opacity-80">
+                  Sertifikat ber-Lambang Garuda BNSP terbit resmi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <!-- <section class="py-20 bg-slate-900 text-white px-4">
+      <div class="max-w-4xl mx-auto text-center reveal">
+        <h2 class="text-3xl font-extrabold mb-6 uppercase italic">
+          Dapatkan Sertifikasi Kompetensi Anda
+        </h2>
+        <p class="text-slate-400 mb-10 leading-relaxed text-sm">
+          Tim kami bekerja sama dengan LSP (Lembaga Sertifikasi Profesi)
+          terakreditasi BNSP untuk membantu Anda mendapatkan pengakuan
+          profesional secara nasional.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="https://wa.me/6281248829810"
+            class="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-bold flex items-center gap-3 shadow-xl hover:bg-indigo-700 transition"
+          >
+            <i class="fab fa-whatsapp text-2xl"></i> HUBUNGI ASESOR BNSP
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- 12. FOOTER & COPYRIGHT -->
+    <footer id="kontak" class="bg-slate-900 text-white pt-24 pb-12 px-4">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20"
+      >
+        <div>
+          <div class="flex items-center mb-6">
+            <div
+              class="bg-blue-600 text-white p-2 rounded-lg font-bold text-xl mr-2 italic"
+            >
+              LOGO
+            </div>
+            <span class="font-bold">LK3 Training Center</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            PT. Eleska Global Centratama Indonesia. Mitra Strategis Sertifikasi
+            SDM Industri Indonesia.
+          </p>
+        </div>
+        <div>
+          <h5
+            class="text-xs font-black uppercase text-blue-400 mb-6 tracking-widest"
+          >
+            Akses Cepat
+          </h5>
+          <ul class="text-slate-400 text-xs space-y-4">
+            <li><a href="#" class="hover:text-white">Beranda</a></li>
+            <li><a href="#" class="hover:text-white">Lisensi ESDM</a></li>
+            <li><a href="#" class="hover:text-white">Lisensi Kemnaker</a></li>
+            <li><a href="#" class="hover:text-white">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="text-xs font-black uppercase text-blue-400 mb-6 tracking-widest"
+          >
+            Kantor Pusat
+          </h5>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Royal Sentraland BTP, Ruko Piccadilly Blok RD 007, Makassar,
+            Sulawesi Selatan.
+          </p>
+          <div class="mt-4 text-xs font-bold text-white">(0411) 8958 855</div>
+        </div>
+        <div>
+          <h5
+            class="text-xs font-black uppercase text-blue-400 mb-6 tracking-widest"
+          >
+            Sosial Media
+          </h5>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="text-2xl text-slate-500 hover:text-white transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-2xl text-slate-500 hover:text-white transition"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="#"
+              class="text-2xl text-slate-500 hover:text-white transition"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center border-t border-slate-800 pt-8 text-[10px] text-slate-600 font-bold uppercase tracking-widest"
+      >
+        &copy; 2025 PT. Indotama Jasa Sertifikasi. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING -->
+    <div class="fixed bottom-8 right-8 z-50">
+      <!-- OPTION BOX -->
+      <div
+        id="waOptions"
+        class="hidden mb-3 bg-white rounded-xl shadow-xl overflow-hidden"
+      >
+        <a
+          href="https://wa.me/6282143130060"
+          target="_blank"
+          class="block px-4 py-3 hover:bg-gray-100 text-sm"
+        >
+          💬 CS 1
+        </a>
+        <a
+          href="https://wa.me/6282143130060"
+          target="_blank"
+          class="block px-4 py-3 hover:bg-gray-100 text-sm"
+        >
+          💬 CS 2
+        </a>
+      </div>
+
+      <!-- MAIN BUTTON -->
+      <button
+        onclick="toggleWA()"
+        class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition animate-bounce"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </div>
+
+    <!-- REVEAL SCRIPT -->
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("active");
+          });
+        },
+        { threshold: 0.1 }
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+      function toggleWA() {
+        const box = document.getElementById("waOptions");
+        box.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

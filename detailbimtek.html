@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detail Program - Indotama Jasa Sertifikasi</title>
+    <title>Detail Program Pelatihan - IJS Indonesia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -15,26 +15,33 @@
         font-family: "Plus Jakarta Sans", sans-serif;
         scroll-behavior: smooth;
       }
+
       .gradient-navy {
         background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
       }
-      .reveal-right {
-        animation: slideRight 0.6s ease-out;
+      .sticky-sidebar {
+        position: sticky;
+        top: 100px;
       }
-      @keyframes slideRight {
+
+      /* Animasi Masuk */
+      .fade-up {
+        animation: fadeUp 0.6s ease-out forwards;
+      }
+      @keyframes fadeUp {
         from {
           opacity: 0;
-          transform: translateX(50px);
+          transform: translateY(20px);
         }
         to {
           opacity: 1;
-          transform: translateX(0);
+          transform: translateY(0);
         }
       }
     </style>
   </head>
   <body class="bg-slate-50 text-slate-900">
-      <body class="bg-slate-50">
+    <!-- BREADCRUMBS -->
     <div class="bg-blue-900 text-white text-xs py-2 hidden md:block">
       <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
         <div class="flex gap-4">
@@ -150,301 +157,338 @@
       </div>
     </nav>
 
-    <!-- BREADCRUMB NAV -->
-    <div class="bg-white border-b border-slate-100 py-4">
-      <div class="max-w-7xl mx-auto px-4">
-        <nav
-          class="flex items-center space-x-2 text-[10px] font-bold uppercase tracking-widest text-slate-400"
-        >
-          <a href="beranda.html" class="hover:text-blue-600">Beranda</a>
-          <i class="fas fa-chevron-right text-[8px]"></i>
-          <a href="bimtek.html" class="hover:text-blue-600">Bimtek</a>
-          <i class="fas fa-chevron-right text-[8px]"></i>
-          <span class="text-blue-900">Detail Pelatihan</span>
-        </nav>
-      </div>
-    </div>
-
-    <!-- MAIN CONTENT -->
     <main class="max-w-7xl mx-auto px-4 py-12">
       <div class="flex flex-col lg:flex-row gap-12">
-        <!-- LEFT COLUMN: DETAIL MATERI -->
-        <div class="lg:w-2/3 reveal-right">
-          <div
-            class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-slate-100"
-          >
+        <!-- LEFT CONTENT (Detail Pelatihan) -->
+        <div class="lg:w-2/3 fade-up">
+          <!-- Header Pelatihan -->
+          <div class="mb-10">
             <span
-              class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter"
-              >Kategori: HSE / K3</span
+              class="bg-amber-100 text-amber-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border border-amber-200"
             >
+              <i class="fas fa-hard-hat mr-1"></i> Sertifikasi Kemenaker RI
+            </span>
             <h1
-              class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-6 mb-8 leading-tight"
+              class="text-3xl md:text-5xl font-extrabold text-blue-900 mt-6 leading-tight uppercase"
             >
-              Implementasi SMK3 Berdasarkan PP No. 50 Tahun 2012
+              Pembinaan Ahli K3 Umum (AK3U)
             </h1>
+            <p class="text-slate-500 text-lg mt-4 font-light leading-relaxed">
+              Persiapkan diri Anda menjadi tenaga profesional yang mampu
+              mengawasi dan mengelola keselamatan kerja sesuai standar hukum
+              Indonesia.
+            </p>
+          </div>
 
+          <!-- Gambar Utama -->
+          <div
+            class="rounded-[3rem] overflow-hidden shadow-2xl mb-12 border-8 border-white"
+          >
             <img
               src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&w=1200&q=80"
-              class="w-full h-80 object-cover rounded-[2rem] mb-10 shadow-lg"
-              alt="Bimtek SMK3"
+              alt="Training Pelatihan"
+              class="w-full h-96 object-cover"
             />
+          </div>
 
-            <div class="prose prose-slate max-w-none">
+          <!-- Navigasi Detail Tab (Visual Only) -->
+          <div
+            class="flex border-b border-slate-200 mb-10 overflow-x-auto space-x-8"
+          >
+            <button
+              class="border-b-4 border-blue-600 pb-4 text-sm font-bold text-blue-900 uppercase tracking-widest"
+            >
+              Deskripsi
+            </button>
+            <button
+              class="pb-4 text-sm font-bold text-slate-400 hover:text-blue-600 uppercase tracking-widest"
+            >
+              Materi
+            </button>
+            <button
+              class="pb-4 text-sm font-bold text-slate-400 hover:text-blue-600 uppercase tracking-widest"
+            >
+              Persyaratan
+            </button>
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="space-y-12">
+            <section>
               <h3
-                class="text-xl font-bold text-blue-900 mb-4 uppercase italic tracking-wider"
+                class="text-xl font-bold text-slate-900 mb-4 italic uppercase tracking-tighter"
               >
-                Deskripsi Pelatihan
+                Tentang Pelatihan
               </h3>
-              <p class="text-slate-600 leading-relaxed mb-8">
-                Pelatihan ini dirancang untuk memberikan pemahaman mendalam bagi
-                para profesional di bidang K3 mengenai penerapan Sistem
-                Manajemen Keselamatan dan Kesehatan Kerja (SMK3) sesuai dengan
-                regulasi terbaru pemerintah Indonesia. Peserta akan dibekali
-                teknik penyusunan dokumen, audit internal, hingga strategi
-                implementasi di lapangan.
+              <p class="text-slate-600 leading-relaxed">
+                Program ini dirancang berdasarkan peraturan perundang-undangan
+                K3 di Indonesia. Peserta akan dibekali dengan pengetahuan
+                mendalam mengenai kebijakan K3 nasional, dasar-dasar K3, hingga
+                teknis identifikasi bahaya di berbagai sektor industri.
               </p>
+            </section>
 
+            <section>
               <h3
-                class="text-xl font-bold text-blue-900 mb-4 uppercase italic tracking-wider"
+                class="text-xl font-bold text-slate-900 mb-6 italic uppercase tracking-tighter"
               >
-                Materi Yang Dipelajari
+                Materi Yang Akan Dipelajari
               </h3>
-              <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-                <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-medium"
-                >
-                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                  Interpretasi PP No. 50 Tahun 2012
-                </li>
-                <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-medium"
-                >
-                  <i class="fas fa-check-circle text-blue-500 mt-1"></i> Teknik
-                  Identifikasi Bahaya & Resiko
-                </li>
-                <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-medium"
-                >
-                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                  Penyusunan Dokumen & Prosedur K3
-                </li>
-                <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-medium"
-                >
-                  <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                  Simulasi Audit Internal SMK3
-                </li>
-              </ul>
-
-              <h3
-                class="text-xl font-bold text-blue-900 mb-4 uppercase italic tracking-wider"
-              >
-                Fasilitas Peserta
-              </h3>
-              <div class="flex flex-wrap gap-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div
-                  class="bg-slate-50 px-4 py-3 rounded-xl flex items-center gap-3 text-xs font-bold text-slate-600 border border-slate-100 italic"
+                  class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-4 group hover:border-blue-500 transition"
                 >
-                  <i class="fas fa-certificate text-amber-500"></i> Sertifikat
-                  IJS Indonesia
+                  <i
+                    class="fas fa-check-circle text-blue-500 group-hover:scale-110 transition"
+                  ></i>
+                  <span class="text-xs font-bold text-slate-700"
+                    >Perundang-undangan K3 Nasional</span
+                  >
                 </div>
                 <div
-                  class="bg-slate-50 px-4 py-3 rounded-xl flex items-center gap-3 text-xs font-bold text-slate-600 border border-slate-100 italic"
+                  class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-4 group hover:border-blue-500 transition"
                 >
-                  <i class="fas fa-book text-blue-500"></i> Modul & Training Kit
+                  <i
+                    class="fas fa-check-circle text-blue-500 group-hover:scale-110 transition"
+                  ></i>
+                  <span class="text-xs font-bold text-slate-700"
+                    >K3 Konstruksi & Bangunan</span
+                  >
                 </div>
                 <div
-                  class="bg-slate-50 px-4 py-3 rounded-xl flex items-center gap-3 text-xs font-bold text-slate-600 border border-slate-100 italic"
+                  class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-4 group hover:border-blue-500 transition"
                 >
-                  <i class="fas fa-coffee text-orange-500"></i> 2x Coffee Break
-                  & Lunch
+                  <i
+                    class="fas fa-check-circle text-blue-500 group-hover:scale-110 transition"
+                  ></i>
+                  <span class="text-xs font-bold text-slate-700"
+                    >K3 Penanggulangan Kebakaran</span
+                  >
+                </div>
+                <div
+                  class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-4 group hover:border-blue-500 transition"
+                >
+                  <i
+                    class="fas fa-check-circle text-blue-500 group-hover:scale-110 transition"
+                  ></i>
+                  <span class="text-xs font-bold text-slate-700"
+                    >K3 Pesawat Angkat & Angkut</span
+                  >
                 </div>
               </div>
-            </div>
+            </section>
+
+            <section
+              class="bg-slate-900 rounded-[3rem] p-10 text-white relative overflow-hidden"
+            >
+              <h3 class="text-xl font-bold mb-6 italic uppercase text-blue-400">
+                Fasilitas Peserta
+              </h3>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-6 relative z-10">
+                <div class="text-center">
+                  <i class="fas fa-id-card text-2xl mb-3 text-blue-200"></i>
+                  <p class="text-[10px] uppercase font-bold tracking-widest">
+                    Sertifikat Resmi
+                  </p>
+                </div>
+                <div class="text-center">
+                  <i class="fas fa-book text-2xl mb-3 text-blue-200"></i>
+                  <p class="text-[10px] uppercase font-bold tracking-widest">
+                    Modul & Kit
+                  </p>
+                </div>
+                <div class="text-center">
+                  <i class="fas fa-utensils text-2xl mb-3 text-blue-200"></i>
+                  <p class="text-[10px] uppercase font-bold tracking-widest">
+                    Lunch & Coffee
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute -right-10 -bottom-10 w-40 h-40 bg-blue-600 rounded-full opacity-20 blur-3xl"
+              ></div>
+            </section>
           </div>
         </div>
 
-        <!-- RIGHT COLUMN: SIDEBAR REGISTRASI -->
+        <!-- RIGHT CONTENT (Sticky Sidebar) -->
         <div class="lg:w-1/3">
-          <div class="sticky top-28 space-y-6">
-            <!-- INFO BOX -->
+          <div class="sticky-sidebar">
             <div
-              class="bg-white rounded-[2rem] p-8 shadow-2xl shadow-blue-900/10 border border-blue-50"
+              class="bg-white rounded-[2.5rem] p-8 shadow-2xl shadow-blue-900/10 border border-slate-100"
             >
-              <div class="mb-6">
+              <div class="mb-8">
                 <span
-                  class="text-[10px] font-black text-slate-400 uppercase tracking-widest"
+                  class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]"
                   >Investasi Pelatihan</span
                 >
-                <div class="text-3xl font-black text-blue-900 mt-1">
-                  Rp 3.500.000
-                  <span class="text-xs font-normal text-slate-400 italic"
-                    >/peserta</span
+                <div class="text-4xl font-black text-blue-900 mt-2">
+                  Rp 4.500.000
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1 font-bold italic">
+                  *Harga khusus pendaftaran kolektif (Min. 3 Orang)
+                </p>
+              </div>
+
+              <!-- Data Meta -->
+              <div class="space-y-4 mb-10">
+                <div
+                  class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="far fa-calendar-alt text-blue-600"></i>
+                    <span class="text-xs font-bold text-slate-500 uppercase"
+                      >Jadwal</span
+                    >
+                  </div>
+                  <span class="text-xs font-black text-blue-900 uppercase"
+                    >12 - 24 Jan 2026</span
+                  >
+                </div>
+                <div
+                  class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-map-marker-alt text-red-500"></i>
+                    <span class="text-xs font-bold text-slate-500 uppercase"
+                      >Lokasi</span
+                    >
+                  </div>
+                  <span class="text-xs font-black text-blue-900 uppercase"
+                    >Makassar / Online</span
+                  >
+                </div>
+                <div
+                  class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <i class="fas fa-users text-emerald-500"></i>
+                    <span class="text-xs font-bold text-slate-500 uppercase"
+                      >Kuota</span
+                    >
+                  </div>
+                  <span
+                    class="text-xs font-black text-emerald-600 uppercase italic"
+                    >Sisa 5 Kursi</span
                   >
                 </div>
               </div>
 
-              <div class="space-y-4 mb-8">
-                <div
-                  class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100"
+              <!-- Action Buttons -->
+              <div class="space-y-3">
+                <button
+                  class="w-full bg-blue-600 text-white py-4 rounded-2xl font-black uppercase tracking-widest text-[11px] shadow-xl shadow-blue-200 hover:bg-blue-700 transition transform active:scale-95"
                 >
-                  <span class="text-xs font-bold text-slate-500"
-                    ><i class="far fa-calendar-alt mr-2 text-blue-500"></i>
-                    Tanggal</span
-                  >
-                  <span class="text-xs font-black text-slate-900 uppercase"
-                    >15 - 17 Jan 2026</span
-                  >
-                </div>
-                <div
-                  class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100"
+                  Daftar Sekarang
+                </button>
+                <a
+                  href="https://wa.me/6281248829810"
+                  class="w-full border-2 border-slate-100 text-slate-600 py-4 rounded-2xl font-black uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 hover:bg-slate-50 transition"
                 >
-                  <span class="text-xs font-bold text-slate-500"
-                    ><i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
-                    Lokasi</span
-                  >
-                  <span class="text-xs font-black text-slate-900 uppercase"
-                    >Makassar (Offline)</span
-                  >
-                </div>
-                <div
-                  class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100"
-                >
-                  <span class="text-xs font-bold text-slate-500"
-                    ><i class="fas fa-user-friends mr-2 text-emerald-500"></i>
-                    Kuota Sisa</span
-                  >
-                  <span class="text-xs font-black text-emerald-600 uppercase"
-                    >5 Kursi Lagi</span
-                  >
-                </div>
+                  <i class="fab fa-whatsapp text-green-500 text-lg"></i> Tanya
+                  Admin
+                </a>
               </div>
 
-              <button
-                onclick="document.getElementById('form-pendaftaran').scrollIntoView()"
-                class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition shadow-xl shadow-blue-200 uppercase tracking-widest text-sm mb-4"
+              <!-- Trust Badge -->
+              <div
+                class="mt-8 flex items-center justify-center gap-4 opacity-40"
               >
-                Daftar Sekarang
-              </button>
-              <a
-                href="https://wa.me/6281248829810"
-                class="w-full border-2 border-slate-100 text-slate-600 py-4 rounded-2xl font-bold hover:bg-slate-50 transition flex items-center justify-center gap-2 text-sm uppercase tracking-widest"
-              >
-                <i class="fab fa-whatsapp text-green-500 text-lg"></i> Chat
-                Admin
-              </a>
+                <i class="fas fa-shield-check text-xl"></i>
+                <span class="text-[9px] font-black uppercase tracking-widest"
+                  >Sertifikat Terverifikasi Teman K3</span
+                >
+              </div>
             </div>
 
-            <!-- MINI FAQ -->
-            <div class="bg-slate-900 text-white rounded-[2rem] p-8">
+            <!-- Mini Related Program -->
+            <div
+              class="mt-8 bg-blue-900 text-white p-6 rounded-[2rem] border border-blue-800"
+            >
               <h4
-                class="font-bold text-xs uppercase tracking-widest mb-4 italic text-blue-400"
+                class="text-[10px] font-black uppercase tracking-widest mb-4 opacity-60"
               >
-                Butuh In-House?
+                Program Lainnya
               </h4>
-              <p class="text-[10px] text-slate-400 leading-relaxed mb-6">
-                Kami melayani pelatihan khusus kelompok besar di lokasi
-                perusahaan Anda dengan harga lebih ekonomis.
-              </p>
-              <a
-                href="#"
-                class="text-[10px] font-bold underline hover:text-blue-400 transition"
-                >Minta Penawaran Resmi</a
-              >
+              <div class="flex items-center gap-4 group cursor-pointer">
+                <div
+                  class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition"
+                >
+                  <i class="fas fa-bolt text-blue-400"></i>
+                </div>
+                <div>
+                  <h5 class="text-xs font-bold">Lisensi ESDM SKTTK</h5>
+                  <p class="text-[9px] opacity-60">Cek Jadwal Januari 2026</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- FORM PENDAFTARAN -->
-      <section
-        id="form-pendaftaran"
-        class="mt-20 max-w-4xl mx-auto bg-white rounded-[3rem] p-8 md:p-16 shadow-lg border border-slate-100"
-      >
-        <div class="text-center mb-12">
-          <h2
-            class="text-2xl font-extrabold text-slate-900 uppercase italic italic"
-          >
-            Formulir Pendaftaran
-          </h2>
-          <p class="text-slate-500 text-sm mt-2 font-medium">
-            Silakan lengkapi data Anda untuk proses reservasi kursi pelatihan.
-          </p>
-        </div>
-
-        <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label
-              class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2"
-              >Nama Lengkap</label
-            >
-            <input
-              type="text"
-              placeholder="Contoh: Andi Wijaya"
-              class="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition text-sm"
-            />
-          </div>
-          <div>
-            <label
-              class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2"
-              >Email Aktif</label
-            >
-            <input
-              type="email"
-              placeholder="andi@gmail.com"
-              class="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition text-sm"
-            />
-          </div>
-          <div>
-            <label
-              class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2"
-              >Nomor WhatsApp</label
-            >
-            <input
-              type="tel"
-              placeholder="0812-XXXX-XXXX"
-              class="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition text-sm"
-            />
-          </div>
-          <div>
-            <label
-              class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2"
-              >Nama Perusahaan / Instansi</label
-            >
-            <input
-              type="text"
-              placeholder="Contoh: PT. Jaya Makmur"
-              class="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition text-sm"
-            />
-          </div>
-          <div class="md:col-span-2">
-            <label
-              class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2"
-              >Pesan Khusus (Opsional)</label
-            >
-            <textarea
-              rows="4"
-              placeholder="Tuliskan kebutuhan khusus Anda..."
-              class="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition text-sm"
-            ></textarea>
-          </div>
-          <div class="md:col-span-2 mt-4 text-center">
-            <button
-              type="button"
-              class="bg-slate-900 text-white px-12 py-4 rounded-2xl font-bold hover:bg-blue-600 transition shadow-xl uppercase tracking-widest text-xs"
-            >
-              Kirim Pendaftaran
-            </button>
-            <p class="text-[10px] text-slate-400 mt-4 italic font-bold">
-              Tim marketing kami akan menghubungi Anda dalam 1x24 jam.
-            </p>
-          </div>
-        </form>
-      </section>
     </main>
 
+    <!-- FORM PENDAFTARAN (Appears after clicking Daftar) -->
+    <section class="max-w-4xl mx-auto px-4 py-24 border-t border-slate-200">
+      <div class="text-center mb-16">
+        <h2
+          class="text-2xl font-extrabold text-blue-900 uppercase italic tracking-tighter"
+        >
+          Formulir Reservasi Kursi
+        </h2>
+        <p class="text-slate-400 text-sm mt-2 font-bold italic uppercase">
+          Silakan isi data Anda untuk proses administrasi.
+        </p>
+      </div>
+      <form
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 md:p-16 rounded-[3rem] shadow-sm border border-slate-100"
+      >
+        <div class="md:col-span-2">
+          <label
+            class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3"
+            >Pilihan Program</label
+          >
+          <input
+            type="text"
+            value="Ahli K3 Umum (AK3U) - Januari 2026"
+            readonly
+            class="w-full bg-slate-50 border border-slate-100 p-4 rounded-xl text-xs font-bold text-blue-900"
+          />
+        </div>
+        <div>
+          <label
+            class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3"
+            >Nama Lengkap</label
+          >
+          <input
+            type="text"
+            placeholder="Andi Wijaya, S.T"
+            class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-600 transition"
+          />
+        </div>
+        <div>
+          <label
+            class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3"
+            >WhatsApp Aktif</label
+          >
+          <input
+            type="tel"
+            placeholder="0812-XXXX-XXXX"
+            class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-600 transition"
+          />
+        </div>
+        <div class="md:col-span-2 text-center mt-6">
+          <button
+            type="submit"
+            class="bg-slate-900 text-white px-12 py-4 rounded-2xl font-black uppercase tracking-widest text-[11px] shadow-xl hover:bg-blue-600 transition"
+          >
+            Kirim Data Pendaftaran
+          </button>
+        </div>
+      </form>
+    </section>
+
     <!-- FOOTER COPYRIGHT -->
-     <footer id="kontak" class="bg-slate-900 text-white pt-24 pb-12 px-4">
+    <footer id="kontak" class="bg-slate-900 text-white pt-24 pb-12 px-4">
       <div
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20"
       >
@@ -518,56 +562,5 @@
         &copy; 2025 PT. Indotama Jasa Sertifikasi. All Rights Reserved.
       </div>
     </footer>
-
-    <!-- WHATSAPP FLOATING -->
-    <!-- <div class="fixed bottom-8 right-8 z-50"> -->
-      <!-- OPTION BOX -->
-      <!-- <div
-        id="waOptions"
-        class="hidden mb-3 bg-white rounded-xl shadow-xl overflow-hidden"
-      >
-        <a
-          href="https://wa.me/6282143130060"
-          target="_blank"
-          class="block px-4 py-3 hover:bg-gray-100 text-sm"
-        >
-          💬 CS 1
-        </a>
-        <a
-          href="https://wa.me/6282143130060"
-          target="_blank"
-          class="block px-4 py-3 hover:bg-gray-100 text-sm"
-        >
-          💬 CS 2
-        </a>
-      </div>
-
-      <!-- MAIN BUTTON -->
-      <button
-        onclick="toggleWA()"
-        class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition animate-bounce"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </button>
-    </div> -->
-    
-    <!-- REVEAL SCRIPT -->
-    <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add("active");
-          });
-        },
-        { threshold: 0.1 }
-      );
-      document
-        .querySelectorAll(".reveal")
-        .forEach((el) => observer.observe(el));
-      function toggleWA() {
-        const box = document.getElementById("waOptions");
-        box.classList.toggle("hidden");
-      }
-    </script>
   </body>
 </html>

@@ -223,273 +223,301 @@
       ></div>
     </header>
 
-    <!-- KATEGORI LISENSI K3 -->
-    <section id="skema" class="py-24 px-4 max-w-7xl mx-auto">
-      <div class="text-center mb-16 reveal">
-        <h2 class="text-3xl font-extrabold text-slate-900 uppercase italic">
-          Kategori Pembinaan K3
-        </h2>
-        <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+    <!-- FILTER & CATEGORY -->
+    <section
+      class="py-12 bg-white border-b border-slate-100 sticky top-20 z-40"
+    >
+      <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-3">
+        <button
+          class="px-6 py-2.5 bg-blue-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest shadow-lg shadow-blue-200"
+        >
+          Semua
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          HSE / K3
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Teknik Listrik
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Manajemen
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Konstruksi
+        </button>
       </div>
+    </section>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Ahli K3 Umum -->
+    <!-- JADWAL BIMTEK (CARDS) -->
+    <section id="jadwal" class="py-24 px-4 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
         <div
-          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-safety transition-all duration-500 group"
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
         >
-          <div
-            class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-blue-900 group-hover:text-white transition-all"
-          >
-            <i class="fas fa-user-shield"></i>
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
+            >
+              Open Registration
+            </div>
           </div>
-          <h3
-            class="text-xl font-bold text-slate-900 mb-4 uppercase leading-tight"
-          >
-            Ahli K3 Umum <br />(AK3U)
-          </h3>
-          <p class="text-slate-500 text-sm leading-relaxed mb-8">
-            Pembinaan calon Ahli K3 Umum untuk mengawasi pelaksanaan peraturan
-            perundangan K3 di tempat kerja.
-          </p>
-          <ul
-            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
-          >
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-amber-500"></i> Sertifikat Kemenaker
-              RI
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-amber-500"></i> SKP & Lisensi
-              Kewenangan
-            </li>
-          </ul>
-          <a
-            href="detailKemnaker.html"
-            class="block text-center w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-900 transition shadow-lg"
-          >
-            Detail AK3U
-          </a>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 15 - 17
+                Jan 2026</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt text-red-500 mr-1"></i>
+                Makassar</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Bimtek Implementasi SMK3 PP No. 50 Tahun 2012
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Pelatihan teknis penyusunan dokumen dan audit internal SMK3 untuk
+              perusahaan.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 3.500.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
+              </div>
+              <a
+                href="detailbimtek.html"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
         </div>
 
-        <!-- Pesawat Angkat Angkut -->
+        <!-- Card 2 -->
         <div
-          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-safety transition-all duration-300 group"
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
         >
-          <div
-            class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-amber-600 group-hover:text-white transition-all"
-          >
-            <i class="fas fa-truck-loading"></i>
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-amber-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
+            >
+              Limited Seats
+            </div>
           </div>
-          <h3
-            class="text-xl font-bold text-slate-900 mb-4 uppercase leading-tight"
-          >
-            Operator Alat Berat <br />(SIO)
-          </h3>
-          <p class="text-slate-500 text-sm leading-relaxed mb-8">
-            Lisensi operator Forklift, Crane, Excavator, Loader, dan Rigger
-            sesuai Permenaker No. 8 Tahun 2020.
-          </p>
-          <ul
-            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
-          >
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-amber-500"></i> Lisensi K3 (SIO)
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-amber-500"></i> Berlaku 5 Tahun
-            </li>
-          </ul>
-          <button
-            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-amber-600 transition shadow-lg"
-          >
-            Cek Skema SIO
-          </button>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 22 - 24
+                Jan 2026</span
+              >
+              <span
+                ><i class="fas fa-video text-blue-500 mr-1"></i> Online
+                Zoom</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Workshop Penyusunan HIRADC & JSA Profesional
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Teknik identifikasi bahaya dan penilaian risiko kerja secara
+              komprehensif.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 1.500.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
+              </div>
+              <a
+                href="#"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
         </div>
 
-        <!-- K3 Spesialis -->
+        <!-- Card 3 -->
         <div
-          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-safety transition-all duration-300 group"
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
         >
-          <div
-            class="w-16 h-16 bg-slate-100 text-slate-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-slate-900 group-hover:text-white transition-all"
-          >
-            <i class="fas fa-fire-extinguisher"></i>
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
+            >
+              Open Registration
+            </div>
           </div>
-          <h3
-            class="text-xl font-bold text-slate-900 mb-4 uppercase leading-tight"
-          >
-            K3 Spesialis & <br />Teknis
-          </h3>
-          <p class="text-slate-500 text-sm leading-relaxed mb-8">
-            Pembinaan khusus Petugas Pemadam Kebakaran, K3 Listrik, K3
-            Konstruksi, dan P3K di tempat kerja.
-          </p>
-          <ul
-            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
-          >
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-amber-500"></i> Sertifikasi Kompetensi
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-amber-500"></i> Standard Teman K3
-            </li>
-          </ul>
-          <button
-            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-slate-900 transition shadow-lg"
-          >
-            Lihat Spesialis
-          </button>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 05 - 07
+                Feb 2026</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt text-red-500 mr-1"></i>
+                Jakarta</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Bimtek K3 Listrik & Sertifikasi SKTTK ESDM
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Pelatihan khusus teknik ketenagalistrikan sesuai standar DJK ESDM.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 4.250.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
+              </div>
+              <a
+                href="#"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- INFO URGENSI HUKUM K3 -->
+    <!-- IN-HOUSE TRAINING SECTION -->
     <section
-      class="py-24 bg-slate-900 text-white px-4 overflow-hidden relative"
+      id="in-house"
+      class="py-24 bg-slate-900 text-white overflow-hidden px-4"
     >
       <div
         class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16"
       >
         <div class="lg:w-1/2 reveal">
           <h2
-            class="text-4xl font-extrabold mb-8 italic uppercase text-amber-400 leading-tight"
+            class="text-4xl font-extrabold mb-6 leading-tight uppercase italic"
           >
-            Landasan Hukum & <br />Kepatuhan K3
+            Layanan <span class="text-blue-400">In-House Training</span>
           </h2>
-          <p class="text-blue-100 text-lg font-light leading-relaxed mb-8">
-            Berdasarkan <strong>UU No. 1 Tahun 1970</strong>, setiap pengusaha
-            wajib menyelenggarakan keselamatan dan kesehatan kerja.
-            Pengoperasian peralatan tanpa lisensi resmi dapat dikenakan sanksi
-            pidana dan denda.
+          <p class="text-slate-400 mb-8 text-lg font-light">
+            Butuh pelatihan khusus untuk internal tim di lokasi perusahaan Anda?
+            Kami melayani kurikulum yang dipersonalisasi sesuai kebutuhan
+            industri Anda.
           </p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            <div class="bg-white/5 border border-white/10 p-6 rounded-3xl">
-              <i class="fas fa-qrcode text-amber-400 text-2xl mb-3"></i>
-              <h4 class="font-bold text-sm">QR Code Teman K3</h4>
-              <p class="text-[10px] text-slate-400 mt-1">
-                Validasi instan via sistem Kemenaker.
-              </p>
-            </div>
-            <div class="bg-white/5 border border-white/10 p-6 rounded-3xl">
-              <i class="fas fa-id-card text-amber-400 text-2xl mb-3"></i>
-              <h4 class="font-bold text-sm">E-Lisensi Resmi</h4>
-              <p class="text-[10px] text-slate-400 mt-1">
-                Kartu kewenangan resmi digital/fisik.
-              </p>
-            </div>
-          </div>
+          <ul class="space-y-4 mb-10 text-sm">
+            <li class="flex items-center gap-3">
+              <i class="fas fa-check-circle text-blue-500"></i> Waktu dan Lokasi
+              Fleksibel
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-check-circle text-blue-500"></i> Kurikulum Bisa
+              Custom (Disesuaikan Case Perusahaan)
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-check-circle text-blue-500"></i> Biaya Lebih
+              Hemat untuk Grup Besar
+            </li>
+          </ul>
+          <a
+            href="https://wa.me/6281248829810"
+            class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-blue-700 transition inline-flex items-center gap-2 shadow-xl shadow-blue-900/40"
+          >
+            <i class="fab fa-whatsapp"></i> Ajukan Penawaran
+          </a>
         </div>
         <div class="lg:w-1/2 reveal">
-          <div
-            class="bg-amber-600 p-12 rounded-[4rem] relative shadow-2xl shadow-amber-900/40"
-          >
-            <h3
-              class="text-2xl font-black mb-6 uppercase italic tracking-tighter"
-            >
-              Mengapa PJK3 LK3 Training?
-            </h3>
-            <ul class="space-y-6">
-              <li class="flex items-start gap-4">
-                <i class="fas fa-certificate text-white mt-1"></i>
-                <div>
-                  <h5 class="font-bold">Penunjukan Resmi</h5>
-                  <p
-                    class="text-[10px] text-amber-100 uppercase tracking-widest font-bold"
-                  >
-                    SKP PJK3 Kemnaker Terupdate
-                  </p>
-                </div>
-              </li>
-              <li class="flex items-start gap-4">
-                <i class="fas fa-tools text-white mt-1"></i>
-                <div>
-                  <h5 class="font-bold">Praktik Lapangan</h5>
-                  <p
-                    class="text-[10px] text-amber-100 uppercase tracking-widest font-bold"
-                  >
-                    Fasilitas Alat & Mesin Lengkap
-                  </p>
-                </div>
-              </li>
-              <li class="flex items-start gap-4">
-                <i class="fas fa-user-tie text-white mt-1"></i>
-                <div>
-                  <h5 class="font-bold">Instruktur Senior</h5>
-                  <p
-                    class="text-[10px] text-amber-100 uppercase tracking-widest font-bold"
-                  >
-                    Pengawas & Praktisi K3 Senior
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+            class="rounded-[3rem] shadow-2xl border-4 border-white/5 grayscale hover:grayscale-0 transition duration-700"
+          />
         </div>
       </div>
     </section>
 
-    <!-- ALUR SERTIFIKASI KEMENAKER -->
-    <section class="py-24 px-4 bg-white">
-      <div class="max-w-7xl mx-auto">
-        <h2
-          class="text-center text-3xl font-extrabold mb-16 reveal uppercase italic tracking-tight"
-        >
-          Alur Pembinaan K3
+    <!-- METODE PELATIHAN -->
+    <section class="py-24 bg-white px-4">
+      <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+        <h2 class="text-3xl font-extrabold text-slate-900 uppercase">
+          Metode Pembelajaran
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 reveal">
-          <div class="text-center">
-            <div
-              class="w-16 h-16 bg-slate-50 border-2 border-dashed border-slate-200 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-black text-slate-300"
-            >
-              01
-            </div>
-            <h4 class="font-bold uppercase mb-2 text-sm">Registrasi</h4>
-            <p
-              class="text-[9px] text-slate-400 font-bold uppercase tracking-widest leading-relaxed"
-            >
-              Upload Ijazah & Pas Foto di Portal
-            </p>
+        <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+      </div>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center reveal">
+          <div
+            class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 text-3xl shadow-inner"
+          >
+            <i class="fas fa-chalkboard-teacher"></i>
           </div>
-          <div class="text-center">
-            <div
-              class="w-16 h-16 bg-slate-50 border-2 border-dashed border-slate-200 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-black text-slate-300"
-            >
-              02
-            </div>
-            <h4 class="font-bold uppercase mb-2 text-sm">Pembinaan</h4>
-            <p
-              class="text-[9px] text-slate-400 font-bold uppercase tracking-widest leading-relaxed"
-            >
-              Penyampaian Materi & Praktik
-            </p>
+          <h4 class="font-bold text-lg mb-2 uppercase">Offline / Tatap Muka</h4>
+          <p class="text-xs text-slate-500">
+            Pelatihan langsung di hotel atau pusat pelatihan IJS dengan praktik
+            lapangan intensif.
+          </p>
+        </div>
+        <div class="text-center reveal">
+          <div
+            class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 text-3xl shadow-inner"
+          >
+            <i class="fas fa-laptop-house"></i>
           </div>
-          <div class="text-center">
-            <div
-              class="w-16 h-16 bg-slate-50 border-2 border-dashed border-slate-200 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-black text-slate-300"
-            >
-              03
-            </div>
-            <h4 class="font-bold uppercase mb-2 text-sm">Evaluasi</h4>
-            <p
-              class="text-[9px] text-slate-400 font-bold uppercase tracking-widest leading-relaxed"
-            >
-              Ujian Akhir (Post-Test) Online
-            </p>
+          <h4 class="font-bold text-lg mb-2 uppercase">Online / Webinar</h4>
+          <p class="text-xs text-slate-500">
+            Fleksibilitas belajar dari mana saja menggunakan platform interaktif
+            dan modul digital.
+          </p>
+        </div>
+        <div class="text-center reveal">
+          <div
+            class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 text-3xl shadow-inner"
+          >
+            <i class="fas fa-users"></i>
           </div>
-          <div class="text-center">
-            <div
-              class="w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-black shadow-lg shadow-amber-200"
-            >
-              04
-            </div>
-            <h4 class="font-bold uppercase mb-2 text-sm">Terbit Lisensi</h4>
-            <p
-              class="text-[9px] text-amber-600 font-bold uppercase tracking-widest leading-relaxed"
-            >
-              Verifikasi & Penerbitan Lisensi K3
-            </p>
-          </div>
+          <h4 class="font-bold text-lg mb-2 uppercase">In-House</h4>
+          <p class="text-xs text-slate-500">
+            Instruktur kami datang ke lokasi Anda untuk memberikan pelatihan
+            khusus karyawan perusahaan.
+          </p>
         </div>
       </div>
     </section>

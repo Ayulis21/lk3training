@@ -205,278 +205,207 @@
       ></div>
     </header>
 
-    <!-- SKEMA SERTIFIKASI BNSP -->
-    <section id="skema" class="py-24 px-4 max-w-7xl mx-auto">
-      <div class="text-center mb-16 reveal">
-        <h2 class="text-3xl font-extrabold text-slate-900 uppercase italic">
-          Skema Sertifikasi Unggulan
-        </h2>
-        <div class="w-16 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- HSE Officer -->
-        <div
-          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-bnsp transition-all duration-500 group"
+    <!-- FILTER & CATEGORY -->
+    <section
+      class="py-12 bg-white border-b border-slate-100 sticky top-20 z-40"
+    >
+      <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-3">
+        <button
+          class="px-6 py-2.5 bg-blue-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest shadow-lg shadow-blue-200"
         >
-          <div
-            class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-all"
-          >
-            <i class="fas fa-user-check"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">
-            HSE Officer BNSP
-          </h3>
-          <p class="text-slate-500 text-sm leading-relaxed mb-8">
-            Sertifikasi untuk personil K3 (Health, Safety, Environment) tingkat
-            dasar hingga menengah di industri.
-          </p>
-          <ul
-            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
-          >
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-indigo-500"></i> Standar SKKNI
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-indigo-500"></i> Pengawas K3 Industri
-            </li>
-          </ul>
-          <button
-            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-indigo-600 transition shadow-lg"
-          >
-            Detail Skema
-          </button>
-        </div>
-
-        <!-- Auditor SMK3 -->
-        <div
-          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-bnsp transition-all duration-500 group"
+          Semua
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
         >
-          <div
-            class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all"
-          >
-            <i class="fas fa-clipboard-list"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">
-            Auditor SMK3
-          </h3>
-          <p class="text-slate-500 text-sm leading-relaxed mb-8">
-            Sertifikasi bagi profesional yang bertugas melakukan audit internal
-            maupun eksternal Sistem Manajemen K3.
-          </p>
-          <ul
-            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
-          >
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-indigo-500"></i> Audit Kepatuhan PP 50
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-indigo-500"></i> Kualifikasi Auditor
-            </li>
-          </ul>
-          <button
-            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-600 transition shadow-lg"
-          >
-            Detail Skema
-          </button>
-        </div>
-
-        <!-- TOT BNSP -->
-        <div
-          class="reveal bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm card-bnsp transition-all duration-500 group"
+          HSE / K3
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
         >
-          <div
-            class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-purple-600 group-hover:text-white transition-all"
-          >
-            <i class="fas fa-chalkboard-teacher"></i>
-          </div>
-          <h3
-            class="text-xl font-bold text-slate-900 mb-4 uppercase leading-tight"
-          >
-            Trainer / TOT <br />BNSP
-          </h3>
-          <p class="text-slate-500 text-sm leading-relaxed mb-8">
-            Training of Trainer (TOT) bagi instruktur profesional untuk
-            mendapatkan lisensi mengajar bersertifikat negara.
-          </p>
-          <ul
-            class="space-y-3 mb-10 text-[11px] font-bold text-slate-400 uppercase tracking-widest"
-          >
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-indigo-500"></i> Metodologi Pelatihan
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fas fa-check text-indigo-500"></i> Sertifikat Kompetensi
-            </li>
-          </ul>
-          <button
-            class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-purple-600 transition shadow-lg"
-          >
-            Detail Skema
-          </button>
-        </div>
+          Teknik Listrik
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Manajemen
+        </button>
+        <button
+          class="px-6 py-2.5 bg-slate-100 text-slate-600 hover:bg-blue-50 rounded-xl text-xs font-bold uppercase tracking-widest transition"
+        >
+          Konstruksi
+        </button>
       </div>
     </section>
 
-    <!-- MATERI & PERSYARATAN BNSP -->
-    <section class="py-24 bg-slate-100 px-4">
-      <div
-        class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start"
-      >
-        <!-- Requirements -->
-        <div class="lg:w-1/2 reveal">
-          <h3
-            class="text-2xl font-extrabold mb-8 italic uppercase border-l-4 border-indigo-600 pl-4"
-          >
-            Persyaratan Peserta
-          </h3>
-          <div class="bg-white p-8 rounded-[3rem] shadow-sm">
-            <p
-              class="text-xs text-slate-500 mb-6 font-bold uppercase tracking-widest"
+    <!-- JADWAL BIMTEK (CARDS) -->
+    <section id="jadwal" class="py-24 px-4 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
+        >
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
             >
-              Syarat Dasar Pengajuan Asesmen:
+              Open Registration
+            </div>
+          </div>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 15 - 17
+                Jan 2026</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt text-red-500 mr-1"></i>
+                Makassar</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Bimtek Implementasi SMK3 PP No. 50 Tahun 2012
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Pelatihan teknis penyusunan dokumen dan audit internal SMK3 untuk
+              perusahaan.
             </p>
-            <ul class="space-y-6">
-              <li class="flex gap-4">
-                <div
-                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 3.500.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
                 >
-                  <i class="fas fa-file-pdf text-sm"></i>
-                </div>
-                <div>
-                  <h5 class="text-sm font-bold">
-                    Kurikulum Vitae (CV) & Jobdesk
-                  </h5>
-                  <p class="text-[10px] text-slate-400 uppercase font-bold">
-                    Bukti Pengalaman Kerja Relevan
-                  </p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <div
-                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
-                >
-                  <i class="fas fa-graduation-cap text-sm"></i>
-                </div>
-                <div>
-                  <h5 class="text-sm font-bold">Ijazah & Transkrip Nilai</h5>
-                  <p class="text-[10px] text-slate-400 uppercase font-bold">
-                    Pendidikan Terakhir Sesuai Skema
-                  </p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <div
-                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
-                >
-                  <i class="fas fa-briefcase text-sm"></i>
-                </div>
-                <div>
-                  <h5 class="text-sm font-bold">
-                    Surat Keterangan Pengalaman Kerja
-                  </h5>
-                  <p class="text-[10px] text-slate-400 uppercase font-bold">
-                    Diterbitkan Oleh Perusahaan (Min. 1-2 Tahun)
-                  </p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <div
-                  class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600 flex-shrink-0"
-                >
-                  <i class="fas fa-images text-sm"></i>
-                </div>
-                <div>
-                  <h5 class="text-sm font-bold">Portofolio Hasil Kerja</h5>
-                  <p class="text-[10px] text-slate-400 uppercase font-bold">
-                    Laporan, Dokumen JSA, HIRADC, atau Sertifikat Lama
-                  </p>
-                </div>
-              </li>
-            </ul>
+              </div>
+              <a
+                href="detailbimtek.html"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
         </div>
 
-        <!-- Assessment Process -->
-        <div class="lg:w-1/2 reveal">
-          <h3
-            class="text-2xl font-extrabold mb-8 italic uppercase border-l-4 border-indigo-600 pl-4"
-          >
-            Alur Asesmen BNSP
-          </h3>
-          <div class="space-y-6">
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
+        >
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
             <div
-              class="flex gap-6 items-center p-6 bg-white rounded-3xl border border-slate-100"
+              class="absolute top-4 left-4 bg-amber-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
             >
-              <div class="text-2xl font-black text-slate-200 uppercase">01</div>
-              <div>
-                <h5 class="font-bold text-indigo-900">Pra-Asesmen</h5>
-                <p class="text-xs text-slate-500">
-                  Verifikasi kelengkapan dokumen portofolio oleh Asesor.
-                </p>
-              </div>
+              Limited Seats
             </div>
+          </div>
+          <div class="p-8">
             <div
-              class="flex gap-6 items-center p-6 bg-white rounded-3xl border border-slate-100"
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
             >
-              <div class="text-2xl font-black text-slate-200 uppercase">02</div>
-              <div>
-                <h5 class="font-bold text-indigo-900">Uji Kompetensi</h5>
-                <p class="text-xs text-slate-500">
-                  Metode Wawancara, Ujian Tulis, dan Observasi Praktik.
-                </p>
-              </div>
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 22 - 24
+                Jan 2026</span
+              >
+              <span
+                ><i class="fas fa-video text-blue-500 mr-1"></i> Online
+                Zoom</span
+              >
             </div>
-            <div
-              class="flex gap-6 items-center p-6 bg-white rounded-3xl border border-slate-100"
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
             >
-              <div class="text-2xl font-black text-slate-200 uppercase">03</div>
-              <div>
-                <h5 class="font-bold text-indigo-900">Rekomendasi</h5>
-                <p class="text-xs text-slate-500">
-                  Keputusan Komite Teknis LSP (Kompeten / Belum Kompeten).
-                </p>
+              Workshop Penyusunan HIRADC & JSA Profesional
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Teknik identifikasi bahaya dan penilaian risiko kerja secara
+              komprehensif.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 1.500.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
               </div>
+              <a
+                href="#"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
             </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 card-shadow transition-all duration-300 reveal"
+        >
+          <div class="relative h-52 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80"
+              class="w-full h-full object-cover"
+            />
             <div
-              class="flex gap-6 items-center p-6 bg-indigo-600 text-white rounded-3xl shadow-lg shadow-indigo-200"
+              class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase italic"
             >
-              <div class="text-2xl font-black text-indigo-300 uppercase">
-                04
+              Open Registration
+            </div>
+          </div>
+          <div class="p-8">
+            <div
+              class="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4"
+            >
+              <span
+                ><i class="far fa-calendar-alt text-blue-500 mr-1"></i> 05 - 07
+                Feb 2026</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt text-red-500 mr-1"></i>
+                Jakarta</span
+              >
+            </div>
+            <h3
+              class="text-xl font-extrabold text-slate-900 mb-4 leading-tight"
+            >
+              Bimtek K3 Listrik & Sertifikasi SKTTK ESDM
+            </h3>
+            <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+              Pelatihan khusus teknik ketenagalistrikan sesuai standar DJK ESDM.
+            </p>
+            <div
+              class="flex items-center justify-between pt-6 border-t border-slate-50"
+            >
+              <div class="text-blue-900 font-black text-lg">
+                Rp 4.250.000
+                <span class="text-[10px] text-slate-400 font-normal"
+                  >/Peserta</span
+                >
               </div>
-              <div>
-                <h5 class="font-bold">Penerbitan Sertifikat</h5>
-                <p class="text-xs opacity-80">
-                  Sertifikat ber-Lambang Garuda BNSP terbit resmi.
-                </p>
-              </div>
+              <a
+                href="#"
+                class="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- FOOTER CTA -->
-    <!-- <section class="py-20 bg-slate-900 text-white px-4">
-      <div class="max-w-4xl mx-auto text-center reveal">
-        <h2 class="text-3xl font-extrabold mb-6 uppercase italic">
-          Dapatkan Sertifikasi Kompetensi Anda
-        </h2>
-        <p class="text-slate-400 mb-10 leading-relaxed text-sm">
-          Tim kami bekerja sama dengan LSP (Lembaga Sertifikasi Profesi)
-          terakreditasi BNSP untuk membantu Anda mendapatkan pengakuan
-          profesional secara nasional.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a
-            href="https://wa.me/6281248829810"
-            class="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-bold flex items-center gap-3 shadow-xl hover:bg-indigo-700 transition"
-          >
-            <i class="fab fa-whatsapp text-2xl"></i> HUBUNGI ASESOR BNSP
-          </a>
-        </div>
-      </div>
-    </section> -->
 
     <!-- 12. FOOTER & COPYRIGHT -->
     <footer id="kontak" class="bg-slate-900 text-white pt-24 pb-12 px-4">
